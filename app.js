@@ -20,4 +20,8 @@ app.get('/', (req, res) => {
 	res.render('contact', {layout: false});
 });
 
+app.post('/send', (req, res) => {
+	console.log(req.body);
+});
+
 app.listen(3000, () => console.log('Server started...'));
